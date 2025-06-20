@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+  <style>
+    /* Font Import */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    form {
+        background: white;
+        padding: 30px 35px;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        transition: all 0.3s ease;
+    }
+
+    form:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #3b82f6;
+        font-size: 0.95rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px 14px;
+        font-size: 1rem;
+        border: 1.5px solid #cbd5e1;
+        border-radius: 10px;
+        outline: none;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+
+    input::placeholder {
+        color: #94a3b8;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        background-color: #3b82f6;
+        color: white;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #2563eb;
+        transform: scale(1.02);
+    }
+</style>
+
+
+</head>
+
+<body>
+
+    <form action="">
+        <div>
+            <label for="username">Username : </label>
+            <input type="text" placeholder="enter username" id="username">
+        </div>
+
+        <div>
+        <label for="password">Password :</label>
+        <input type="password" placeholder="enter password" id="password">
+        </div>
+
+        <div>
+            <label for="age">Enter age : </label>
+            <input type="age" placeholder="enter age">
+        </div>
+
+        <button>Submit</button>
+
+    </form>
+
+</body>
+
+</html>

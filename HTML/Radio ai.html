@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Dark Radio Buttons</title>
+    <style>
+        body {
+            background-color: #1e1e2f;
+            color: #f3d1dc;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 1.2rem;
+            padding: 2rem;
+            line-height: 2;
+        }
+
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: #2c2c3c;
+            border: 2px solid #f3d1dc;
+            padding: 0.5em;
+            border-radius: 50%;
+            width: 1.2em;
+            height: 1.2em;
+            position: relative;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="radio"]:checked {
+            background-color: #ffafcc;
+            box-shadow: 0 0 8px #ffafcc;
+            transform: scale(1.2);
+        }
+
+        label {
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+        }
+
+        label:hover {
+            background-color: #2a2a3d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🍓 Choose Your Favorite Fruit</h2>
+
+    <input type="radio" id="apple" name="fruit" value="apple">
+    <label for="apple">Apple</label>
+
+    <br>
+
+    <input type="radio" id="mango" name="fruit" value="mango">
+    <label for="mango">Mango</label>
+
+    <br>
+
+    <input type="radio" id="banana" name="fruit" value="banana">
+    <label for="banana">Banana</label>
+
+</body>
+
+</html>

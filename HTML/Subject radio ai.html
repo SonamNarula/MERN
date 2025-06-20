@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose your subjects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #c4fff9, #d9cfff);
+      font-family: 'Quicksand', sans-serif;
+      padding: 2rem;
+      font-size: 1.2rem;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    h2 {
+      color: #6b21a8;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease;
+    }
+
+    div {
+      margin-bottom: 2rem;
+      animation: slideUp 1s ease;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      background-color: #fff0f6;
+      border: 2px solid #a78bfa;
+      border-radius: 6px;
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: #a78bfa;
+      box-shadow: 0 0 10px #a78bfa;
+      animation: bounce 0.3s ease;
+    }
+
+    label {
+      margin-right: 30px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    label:hover {
+      color: #7c3aed;
+    }
+
+    button {
+      background-color: #22d3ee;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 8px 16px rgba(34, 211, 238, 0.4);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      animation: fadeIn 1.2s ease;
+    }
+
+    button:hover {
+      background-color: #06b6d4;
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    /* Animations */
+    @keyframes bounce {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🌟 Choose Your Subjects</h2>
+
+  <div>
+    <input type="checkbox" id="maths" name="subjects" value="maths" />
+    <label for="maths">Maths</label>
+
+    <input type="checkbox" id="science" name="subjects" value="sci" />
+    <label for="science">Science</label>
+
+    <input type="checkbox" id="english" name="subjects" value="eng" />
+    <label for="english">English</label>
+  </div>
+
+  <button>Submit</button>
+
+</body>
+</html>
